@@ -14,21 +14,23 @@
             
         </Grid.ColumnDefinitions>
 
-        <StackPanel>
-
+        <StackPanel Grid.Column="0">
             <ComboBox Name="Capitales">
-
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            
+                        <StackPanel Orientation="Horizontal">                            
                             <TextBlock Text="{Binding NombreCapital}" FontSize="16" />
-                            <TextBlock Text="{Binding Pais}" FontSize="16" />
-                            
+                            <TextBlock Text="{Binding Pais}" FontSize="16" />                            
                         </StackPanel>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
-            </ComboBox>
+            </ComboBox>            
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="100">
+
+            <Label FontSize="16" FontWeight="ExtraBlack">Paises:</Label>
+            <CheckBox Name="TodasC" IsThreeState="True">Agregar Todas</CheckBox>
             
         </StackPanel>
     </Grid>
