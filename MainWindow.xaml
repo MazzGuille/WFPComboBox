@@ -30,7 +30,14 @@
         <StackPanel Grid.Column="1" Margin="100">
 
             <Label FontSize="16" FontWeight="ExtraBlack">Paises:</Label>
-            <CheckBox Name="TodasC" IsThreeState="True">Agregar Todas</CheckBox>
+            <CheckBox Name="TodasC" IsThreeState="True" Checked="TodasC_Checked" Unchecked="TodasC_Unchecked">Agregar Todas</CheckBox>
+            <StackPanel Margin="15">
+                <CheckBox Name="BuenosAires" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Buenos Aires</CheckBox>
+                <CheckBox Name="Caracas" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Caracas</CheckBox>
+                <CheckBox Name="Bogota" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Bogota</CheckBox>
+                <CheckBox Name="SaoPaulo" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Sao Paulo</CheckBox>
+                <CheckBox Name="Madrid" Checked="IndividualChecked" Unchecked="IndividualNotChecked">Madrid</CheckBox>
+            </StackPanel>
             
         </StackPanel>
     </Grid>
